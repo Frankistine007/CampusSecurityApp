@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "729663364343",
+    "project_id": "campussecurityapp",
+    "storage_bucket": "campussecurityapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729663364343:android:f3d8516d44f6ace6d747f2",
+        "android_client_info": {
+          "package_name": "com.example.campussecurityapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_xuOEY46FT5zxV-u5y_qLXHHh4Zhg9Bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
