@@ -3,8 +3,14 @@
 
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
 
 
     <application
@@ -32,14 +38,21 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
 
-        <receiver android:name=".VolumeButtonReceiver"
-            android:exported="false">
+        <activity
+            android:name="com.example.campussecurityapp.SmsManager"
+            android:label="@string/app_name"
+            android:exported="true">
+
             <intent-filter>
-                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </receiver>
+
+        </activity>
 
         <service
             android:name=".RecordingService"
